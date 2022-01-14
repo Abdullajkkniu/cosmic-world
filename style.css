@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+.container{
+    max-width: 1200px;
+    margin:0 auto;
+    padding:0 30px;
+}
+.highlight{
+    color:#FF008E;
+}
+.section-title{
+    text-align: center;
+}
+.section-title h2{
+    font-size:40px;
+    border-bottom:2px solid #FF008E;
+    margin:50px 0;
+    display: inline-block;
+    text-transform: uppercase;
+}
+header{
+    height:100vh;
+    background-image: url(/images/cloud.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.575);
+    background-blend-mode: overlay;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    height:80px;
+    align-items: center;
+}
+ul li{
+    display:inline-block;
+    
+}
+.navigation li a{
+    text-decoration: none;
+    margin:15px;
+    color:white;
+    font-weight:600;
+    padding:10px;
+}
+.banner{
+    height:calc(100vh-80px);
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.banner-left{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:flex-start;
+
+}
+.banner-left h1{
+    font-size: 45px;
+    color:white;
+}
+.banner-left p{
+    color:white;
+    font-size: 18px;
+    margin:20px 0;
+    line-height: 1.5;
+}
+/* feature part css starts */
+.feature{
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap:30px;
+    
+}
+.card{
+    width: 300px;
+    padding:30px;
+    margin:0 auto;
+    box-shadow: 0 30px 35px rgba(0, 0, 0, 0.25);
+}
+.card .card-icon{
+    background-color: #FF008E;
+    border-radius: 50%;
+   
+    padding:10px;
+    color:black;
+    font-size: 1.5em;
+
+    
+}
+.card h3{
+    color:#FF008E;;
+    font-size: 25px;
+}
+.card p{
+    margin:10px 0;
+    line-height: 1.5;
+
+}
+.card a{
+    color:#FF008E;
+    text-decoration: none;
+}
+
+/* feature part css ends */
+.primary-button{
+    outline: 0;
+    border:0;
+    padding:15px 20px;
+    background-image: linear-gradient(90deg, #C21273, #FF008E);
+    color:white;
+    font-size: 18px;
+    text-transform: uppercase;
+    border-radius: 5px;
+    cursor:pointer;
+    box-shadow:0 7px 0 #923f6d ;
+    position: relative;
+    top:0;
+}
+.primary-button:active{
+    top:5px;
+    box-shadow:0 2px 0 #923f6d ;
+}
+.banner-right img{
+    width:100%;
+}
